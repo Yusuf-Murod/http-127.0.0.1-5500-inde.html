@@ -4,48 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(model.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-      <h1>Портфолио</h1>
-    <div class="table">
-        <div class="table__cell hell">
-            <img src="https://winatalent.com/blog/wp-content/uploads/2023/12/Best-Programming-Software-for-Writing-Code.jpg" alt="">
-            <h2>
-                Сайт для бизнеса
-            </h2>
-            <h3>
-                весртак Сайт для бизнеса
-            </h3>
-        </div>
-        <div class="table__cell hello">
-            <img src="https://winatalent.com/blog/wp-content/uploads/2023/12/Best-Programming-Software-for-Writing-Code.jpg" alt="">
-            <h2>
-                Сайт для робототехники
-            </h2>
-            <h3>
-                весртак Сайт для робототехники
-            </h3>
-        </div>
-        <div class="table__cell helo">
-            <img src="https://winatalent.com/blog/wp-content/uploads/2023/12/Best-Programming-Software-for-Writing-Code.jpg" alt="">
-            <h2>
-                Сайт для онлайн-курсов
-            </h2>
-            <h3>
-                весртак Сайт для онлайн-курсов
-            </h3>
+
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="http://127.0.0.1:5500/html/image%20copy.png" alt=""></div>
+            <div class="item" style="--position: 3"><img src="http://127.0.0.1:5500/html/image%20copy.png" alt=""></div>
+            <div class="item" style="--position: 4"><img src="http://127.0.0.1:5500/html/image%20copy.png" alt=""></div>
+            <div class="item" style="--position: 5"><img src="http://127.0.0.1:5500/html/image%20copy.png" alt=""></div>
+            <div class="item" style="--position: 2"><img src="http://127.0.0.1:5500/html/image%20copy.png" alt=""></div>
+            <div class="item" style="--position: 6"><img src="http://127.0.0.1:5500/html/image%20copy.png" alt=""></div>
+            <div class="item" style="--position: 7"><img src="http://127.0.0.1:5500/html/image%20copy.png" alt=""></div>
+            <div class="item" style="--position: 8"><img src="http://127.0.0.1:5500/html/image%20copy.png" alt=""></div>
+            <div class="item" style="--position: 9"><img src="http://127.0.0.1:5500/html/image%20copy.png" alt=""></div>
+            <div class="item" style="--position: 10"><img src="http://127.0.0.1:5500/html/image%20copy.png" alt=""></div>
         </div>
         
-        <div class="table__cell helo">
-            <img src="https://winatalent.com/blog/wp-content/uploads/2023/12/Best-Programming-Software-for-Writing-Code.jpg" alt="">
-            <h2>
-                Сайт для онлайн-курсов
-            </h2>
-            <h3>
-                весртак Сайт для онлайн-курсов
-            </h3>
-        </div>
-    </div>
 </body>
 </html>
